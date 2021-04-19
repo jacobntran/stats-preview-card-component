@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 111rem;
+  height: 44.6rem;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+}
+
+.card-info {
+  width: 57rem;
+  padding: 8rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.card-info-header {
+  font-size: 3.6rem;
+  margin-bottom: 2.5rem;
+}
+
+span {
+  font-size: 3.6rem;
+  color: hsl(277, 64%, 61%);
+}
+
+.card-info-sub {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-info-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+  padding-right: 3.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.stats-header {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.stats-sub {
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.overlay {
+  width: 54rem;
+  background: hsl(277, 64%, 61%);
+}
+
+img {
+  opacity: 0.4;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 1.1rem;
+}
