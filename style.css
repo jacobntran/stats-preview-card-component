@@ -36,6 +36,7 @@ main {
 .card-info-header {
   font-size: 3.6rem;
   margin-bottom: 2.5rem;
+  line-height: 4.4rem;
 }
 
 span {
@@ -46,6 +47,7 @@ span {
 .card-info-sub {
   font-size: 1.5rem;
   color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2.5rem;
 }
 
 .card-info-stats {
@@ -59,12 +61,17 @@ span {
 .stats-header {
   font-size: 2.4rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .stats-sub {
   font-size: 1.2rem;
   font-family: "Lexend Deca", sans-serif;
   color: hsla(0, 0%, 100%, 0.6);
+}
+
+.mobile-image {
+  display: none;
 }
 
 .overlay {
@@ -85,4 +92,57 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
   font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 32.7rem;
+    height: 78rem;
+    flex-direction: column;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .overlay {
+    width: 32.7rem;
+    height: 24rem;
+  }
+
+  img {
+    width: 32.7rem;
+    height: 24rem;
+  }
+
+  .card-info {
+    width: 32.7rem;
+    height: 54rem;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .card-info-header {
+    font-size: 2.8rem;
+    margin: 1.5rem 0 2.5rem 0;
+    line-height: 3.2rem;
+  }
+
+  span {
+    font-size: 2.8rem;
+  }
+
+  .card-info-stats {
+    display: flex;
+    align-items: space-between;
+    margin-top: 3rem;
+    padding-right: 0;
+    color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    height: 20rem;
+  }
 }
